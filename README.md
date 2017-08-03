@@ -1,3 +1,3 @@
-# QCM Base
+# Genesis Sample Grid
 
-Our internal development theme based on the Genesis Framework
+A modular version of the Genesis Sample theme that leverages CSS grid.
