@@ -1,0 +1,25 @@
+//
+// Comments base stylings
+//
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+  @include rem(font-size, $size--comments);
+  background-color: $color--comments--background;
+  margin-bottom: $margin--default-bottom;
+
+}
+
+.comment-respond,
+.entry-pings {
+  padding: 60px 60px 32px;
+}
+
+.entry-comments {
+  padding: $padding--default;
+}
+
+.entry-pings .reply {
+  display: none;
+}

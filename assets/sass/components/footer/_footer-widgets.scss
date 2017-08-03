@@ -1,0 +1,30 @@
+/* # Footer Widgets ---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+  background-color: $color--footer-widgets--background;
+
+  @supports (grid-area: auto) {
+    @media screen and (min-width: $media--medium-screen) {
+      grid-column: span 8;
+
+      .wrap {
+        display: grid;
+      	grid-template-columns: repeat(3, 1fr);
+        grid-gap: $width--gutter;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        &::before {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  .widget-area {
+    @include rem(font-size, $size--footer-widgets);
+    width: 100%;
+  }
+
+}

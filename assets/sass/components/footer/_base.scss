@@ -1,0 +1,18 @@
+.site-footer {
+  @include rem(font-size, $size--footer);
+  background-color: $color--site-footer--background;
+  line-height: 1;
+  padding: $padding--default;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @supports (grid-area: auto) {
+    @media screen and (min-width: $media--medium-screen) {
+      grid-column: span 8;
+    }
+  }
+
+}

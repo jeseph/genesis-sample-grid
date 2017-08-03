@@ -1,0 +1,48 @@
+.widget-area {
+  margin-bottom: $margin--default-bottom;
+}
+
+.widget {
+  padding: $padding--default;
+  word-wrap: break-word;
+
+  ul > li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+  }
+
+  ol > li {
+    list-style-position: inside;
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+
+  li li {
+    border: 0;
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
+
+}
+
+.widget-title {
+  font-size: rem (font-size, $size--widget-title);
+  margin-bottom: 20px;
+}
+
+.sidebar .widget-title a {
+  color: $color--widget--title;
+  text-decoration: none;
+}
+
+.widget p:last-child,
+.widget ul > li:last-of-type,
+.widget-area .widget:last-of-type {
+  margin-bottom: 0;
+}

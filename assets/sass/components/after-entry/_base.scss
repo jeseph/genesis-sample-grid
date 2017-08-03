@@ -1,0 +1,6 @@
+.after-entry {
+  @include rem(font-size, $normal);
+  background-color: $white;
+  margin-bottom: $margin--default-bottom;
+
+}

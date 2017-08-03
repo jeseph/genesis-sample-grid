@@ -1,0 +1,14 @@
+.sidebar {
+  @include rem( font-size, $size--sidebar );
+
+  @supports (grid-area: auto) {
+    @media screen and (min-width: $media--medium-screen) {
+      grid-column: 6/8;
+    }
+  }
+
+  .widget {
+    background-color: $color--sidebar--widget--background;tom: 5%;
+  }
+
+}

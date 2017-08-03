@@ -1,0 +1,11 @@
+.site-header {
+  background-color: $color--site-header--background;
+  padding: $padding--default;
+
+  @supports (grid-area: auto) {
+    @media screen and (min-width: $media--medium-screen) {
+      grid-column: span 8;
+    }
+  }
+
+}

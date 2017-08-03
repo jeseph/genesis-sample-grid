@@ -1,0 +1,11 @@
+.archive-description {
+  @include rem(font-size, $normal);
+  background-color: #fff;
+  margin-bottom: $margin--default-bottom;
+  padding: $padding--default;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,21 @@
+// ## Title Area --------------------------------------------- */
+
+.title-area {
+
+  .site-title {
+    @include rem(font-size, $size--site-title);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: center;
+
+    a,
+    a:hover,
+    a:focus {
+      color: $color--site-title;
+      text-decoration: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,35 @@
+/* ## Site Containers --------------------------------------------- */
+
+.site-container {
+
+  @supports (grid-area: auto) {
+    @media screen and (min-width: $media--medium-screen) {
+      display: grid;
+    	grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+    	grid-template-rows: minmax(1em, auto) 1fr minmax(1em, auto);
+    }
+  }
+
+}
+
+.site-inner,
+.wrap {
+
+  @supports not (display: grid) {
+    max-width: calc(100% - 2em);
+    margin: 0 auto;
+  }
+
+}
+
+.site-inner {
+  word-wrap: break-word;
+}
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: $media--medium-screen) {
+    .content-sidebar-wrap {
+      grid-column: 2/6;
+    }
+  }
+}

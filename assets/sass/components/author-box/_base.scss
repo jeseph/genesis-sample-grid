@@ -1,0 +1,15 @@
+.author-box {
+  @include rem(font-size, $normal);
+  background-color: $white;
+  margin-bottom: $margin--default-bottom;
+  padding: $padding--default;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.author-box-title {
+  @include rem(font-size, $large)
+}
