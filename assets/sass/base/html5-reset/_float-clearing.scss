@@ -13,7 +13,7 @@
 .site-inner::before,
 .widget::before,
 .wrap::before {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -33,6 +33,6 @@
 .widget::after,
 .wrap::after {
   clear: both;
-  content: " ";
+  content: ' ';
   display: table;
 }

@@ -1,12 +1,12 @@
 /* ## Button Styles --------------------------------------------- */
 
-button,
 .button {
+  @include rem(font-size, $small);
   background-color: $red;
   border: 0;
   color: $white;
   cursor: pointer;
-  @include rem(font-size, $small);
+  display: block;
   font-weight: 700;
   padding: 16px 24px;
   text-decoration: none;
@@ -14,32 +14,20 @@ button,
   width: auto;
 }
 
-button:hover,
-button:focus,
 .button:hover,
 .button:focus {
-  background-color: $dark-gray;
+  background-color: $black;
   color: $white;
 }
 
-.entry-content .button:hover,
-.entry-content .button:focus {
-  color: $white;
+.button-small {
+  padding: 8px 12px;
 }
 
-.button {
-  display: inline-block;
-}
-
-a.button.small,
-button.small {
-  padding: 8px 16px;
-}
-
-.site-container button:disabled,
-.site-container button:disabled:hover {
+.site-container .button:disabled,
+.site-container .button:disabled:hover {
   background-color: $light-gray;
   border-width: 0;
-  color: #777;
+  color: $dark-gray;
   cursor: not-allowed;
 }

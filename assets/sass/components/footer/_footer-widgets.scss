@@ -9,8 +9,8 @@
 
       .wrap {
         display: grid;
-      	grid-template-columns: repeat(3, 1fr);
         grid-gap: $width--gutter;
+        grid-template-columns: repeat(3, 1fr);
         margin: 0 auto;
         max-width: 1200px;
 

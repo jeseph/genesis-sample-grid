@@ -1,44 +1,38 @@
-/* ## Genesis eNews Extended
---------------------------------------------- */
-
-.sidebar .enews-widget,
-.sidebar .enews-widget .widget-title {
-  color: #fff;
-}
-
-.sidebar .widget.enews-widget {
-  background-color: #333;
-}
-
-.sidebar .enews-widget input,
-.sidebar .enews-widget input:focus {
-  border: 1px solid #333;
-}
-
-.sidebar .enews-widget input[type="submit"] {
-  background-color: #c3251d;
-  color: #fff;
-}
-
-.sidebar .enews-widget input:hover[type="submit"],
-.sidebar .enews-widget input:focus[type="submit"] {
-  background-color: #fff;
-  color: #333;
-}
+/* ## Genesis eNews Extended --------------------------------------------- */
 
 .enews-widget {
-
   input {
-    @include rem( font-size, $size--enews--input );
-    margin-bottom: 16px;
-  }
-
-  &[type="submit"] {
-    margin: 0;
-    width: 100%;
+    @include rem(font-size, $size--enews--input);
   }
 }
 
-.enews form + p {
-  margin-top: 24px;
+.sidebar {
+  .enews-widget,
+  .enews-widget .widget-title {
+    color: $color--enews-widget--text;
+  }
+
+  .widget-area .enews-widget {
+    background-color: $color--enews-widget--background;
+  }
+
+  .enews-wiget input {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .enews-widget input[type='submit'] {
+    background-color: $color--enews-widget--submit-background;
+    color: $color--enews-widget--submit-text;
+  }
+
+  .enews-widget input:hover[type='submit'],
+  .enews-widget input:focus[type='submit'] {
+    background-color: $color--enews-widget--submit-background-hover;
+    color: $color--enews-widget--submit-text-hover;
+  }
+
+  .enews form + p {
+    margin-top: 24px;
+  }
 }

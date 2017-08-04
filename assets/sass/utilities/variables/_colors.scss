@@ -5,7 +5,7 @@ $white: #fff;
 $black: #333;
 $red: #c3251d;
 $light-gray: #eee;
-$gray: #ccc;
+$gray: #ddd;
 $dark-gray: #696969;
 $blue: #365899;
 
@@ -64,13 +64,23 @@ $color--entry--code--background: $black;
 //
 // Comment Colors
 //
-$color--comments--background: $white; 
+$color--comments--background: $white;
 
 //
 // Widget Colors
 //
 $color--widget--title: $black;
 $color--sidebar--widget--background: $white;
+
+//
+// Plugin Colors
+//
+$color--enews-widget--text: $white;
+$color--enews-widget--background: $black;
+$color--enews-widget--submit-text: $white;
+$color--enews-widget--submit-background: $red;
+$color--enews-widget--submit-text-hover: $black;
+$color--enews-widget--submit-background-hover: $white;
 
 //
 // Footer Colors

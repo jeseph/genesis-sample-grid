@@ -3,9 +3,9 @@ blockquote {
 }
 
 blockquote::before {
-  content: "\201C";
-  display: block;
   @include rem(font-size, $size--blockquote);
+  content: '\201C';
+  display: block;
   height: 0;
   left: -20px;
   position: relative;

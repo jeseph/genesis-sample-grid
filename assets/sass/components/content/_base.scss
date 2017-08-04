@@ -1,7 +1,8 @@
 .entry {
   background-color: $color--entry--background;
-  padding: $padding--default;
   margin-bottom: $margin--default-bottom;
+  max-width: $width--content-max;
+  padding: $padding--default;
 }
 
 .entry-content {
